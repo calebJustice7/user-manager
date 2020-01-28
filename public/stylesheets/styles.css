@@ -1,0 +1,36 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-image: url('../images/bgimage.jpg');
+    background-size: cover;
+}
+
+.header {
+    font-size: 2em;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 15px 0;
+    color: white;
+}
+.links-wrapper {
+    width: 200px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 220px;
+    padding: 30px 15px;
+    border-radius: 8px; 
+}
+.links-wrapper p {
+    margin: 30px 0;
+}
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.2em;
+    transition: 0.7s;
+}
+a:hover {
+    letter-spacing: 2px;
+}

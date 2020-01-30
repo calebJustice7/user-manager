@@ -1,0 +1,35 @@
+doctype html 
+html
+    head 
+        title Home Page
+        style 
+            include ../public/stylesheets/styles.css
+    body
+        div.header View Users
+        
+        div.view-buttons-wrapper 
+            a(href="/")
+                button(class="red-button") Cancel
+    
+        form(class="view-user-form" method="POST")
+            div.table-row 
+                input(readonly value="Username")
+                input(readonly value="Name")
+                input(readonly value="Email address")
+                input(readonly value="Age")
+        each val in data 
+            form(class="view-user-form-body" method="POST" action="/viewUsers")
+                div.table-row 
+                    input(readonly value=val.username name="username")
+                    input(readonly value=val.name name="name")
+                    input(readonly value=val.email name="email")
+                    input(readonly value=val.age name="age")
+
+                    a(href="#" class="edit-link")
+                        button(type="submit" formaction="/viewUsers").edit Edit 
+                    a(href="#" class="edit-link")
+                        button(type="submit" formaction="/deleteUser" class="delete red-button") Delete
+            
+
+
+

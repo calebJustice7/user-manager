@@ -34,3 +34,180 @@ a {
 a:hover {
     letter-spacing: 2px;
 }
+.view-user-form {
+    width: 60%;
+    margin: 0 auto;
+}
+.view-user-form-body {
+    width: 60%;
+    margin: 0 auto;
+}
+.view-user-form input, .view-user-form-body input {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.2em;
+    outline: none;
+    text-align: center;
+    border-left: 2px solid white;
+    padding: 10px 0;
+}
+.view-user-form .table-row:first-child {
+    border: 2px solid white;
+    border-left: none;
+    margin-top: 100px;
+    font-weight: 800;
+    background-color: white;
+}
+.view-user-form .table-row:first-child input {
+    color: black;
+}
+.table-row {
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+    color: #dadfea;
+}
+.table-row input {
+    overflow: scroll;
+}
+.create-user-form {
+    width: 22%;
+    margin: 0 auto;
+    margin-top: 160px;
+    text-align: center;
+    font-size: 1.2em;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 50px 100px;
+    border-radius: 6px;
+    box-shadow: 0px 0px 4px 1px rgba(122,121,122,1);
+
+}
+.form-input-wrapper {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 35px;
+}
+.form-input-wrapper input {
+    padding: 6px 3px;
+    border: 1px solid black;
+    border-radius: 4px;
+    font-size: .68em;
+}
+.buttons-wrapper {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+button {
+    border: 2px solid #30D158;
+    color: #30D158;
+    background: none;
+    border-radius: none;
+    font-size: 0.87em;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+label {
+    color: white;
+}
+.buttons-wrapper a {
+    color: #30D158;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 0;
+    font-size: 0.8em;
+}
+.users-page-wrapper {
+    padding-left: 15%;
+    padding-top: 10%;
+}
+.users-table-wrapper {
+    width: 64%;
+    border: 2px solid white;
+    border-bottom: none;
+    border-left: none;
+    position: relative;
+}
+.users-table-wrapper .table-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.users-table-wrapper .table-header div {
+    color: #cbcbcb;
+    border-left: 2px solid white;
+    text-align: center;
+    padding: 13px 0;
+    overflow: scroll;
+    border-bottom: 2px solid white;
+}
+.users-table-wrapper .table-header .name {
+    width: 24%;
+}
+.users-table-wrapper .table-header .username{
+    width: 27%;
+}
+.users-table-wrapper .table-header .email {
+    width: 35%;
+}
+.users-table-wrapper .table-header .age {
+    width: 14%;
+}
+.users-table-wrapper .table-header:first-child div {
+    font-size: 1.3em;
+    font-weight: 900;
+    color: white;
+    padding: 14px 0;
+}
+.table-header .edit-link {
+    position: absolute;
+    right: -200px;
+}
+.table-header .delete {
+    position: absolute;
+    right: -110px;
+}
+
+.table-row .edit-link {
+    position: absolute;
+    right: 175px;
+}
+.table-row .delete {
+    position: absolute;
+    right: -110px;
+}
+.red-button {
+    border: 1px solid #FF4539;
+    color: #FF4539;
+}
+.modal-wrapper {
+    width: 100%;
+    height: 82%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.65);
+    display: flex;
+    justify-content: center;
+    padding-top: 15%;
+}
+.modal-wrapper .modal-content {
+    background-color: white;
+    width: 33%;
+    height: 300px;
+    border-radius: 6px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}  
+.modal-wrapper .modal-content .modal-header {
+    font-size: 1.5em;
+}
+.view-buttons-wrapper {
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 50px;
+}

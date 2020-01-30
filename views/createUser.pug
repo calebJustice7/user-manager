@@ -5,5 +5,23 @@ html
         style 
             include ../public/stylesheets/styles.css
     body
-        div.header Create an Account
+        div.header Create A User
 
+        form(method="POST" action="/" class="create-user-form")
+            div.form-input-wrapper
+                label Username
+                input(name='username' placeholder='Enter username')
+            div.form-input-wrapper
+                label Name
+                input(name="name" placeholder="Enter your name")
+            div.form-input-wrapper 
+                label Email Address
+                input(name="email" placeholder="Enter email")
+            div.form-input-wrapper 
+                label Age
+                input(name="age" placeholder="Enter age")
+            div.buttons-wrapper 
+                a(href="#")
+                    button(type="submit") Create User
+                a(href="/") 
+                    button(type="button" class="red-button") Cancel

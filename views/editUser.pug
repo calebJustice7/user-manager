@@ -1,0 +1,27 @@
+doctype html 
+html
+    head 
+        title Edit User
+        style 
+            include ../public/stylesheets/styles.css
+    body
+        div.header Edit Users
+    
+        form(method="POST" action="/editUser" class="create-user-form")
+            div.form-input-wrapper
+                label Username
+                input(name='username' value=data.username)
+            div.form-input-wrapper
+                label Name
+                input(name="name" value=data.name)
+            div.form-input-wrapper 
+                label Email Address
+                input(name="email" value=data.email)
+            div.form-input-wrapper 
+                label Age
+                input(name="age" value=data.age)
+            div.buttons-wrapper 
+                a(href="#")
+                    button(type="submit") Submit Changes
+                a(href="/viewUsers") 
+                    button(type="button" class="red-button") Cancel
